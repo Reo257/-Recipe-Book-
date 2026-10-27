@@ -5,8 +5,8 @@ A full-stack Recipe Book web application built with the **MERN Stack** (MongoDB,
 ## 🔗 Links & Submissions
 
 - **GitHub Repository**: [https://github.com/Reo257/-Recipe-Book-](https://github.com/Reo257/-Recipe-Book-)
-- **Live Frontend**: [Deployed Vercel URL]
-- **Live Backend API**: [Deployed Render URL]
+- **Live Frontend**: [https://recipe-book-alpha-five.vercel.app](https://recipe-book-alpha-five.vercel.app)
+- **Live Backend API**: [https://recipe-book-backend-uyfd.onrender.com](https://recipe-book-backend-uyfd.onrender.com)
 
 ## 📁 Project Structure
 
