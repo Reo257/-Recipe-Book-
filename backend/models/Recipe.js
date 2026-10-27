@@ -31,6 +31,11 @@ const recipeSchema = new mongoose.Schema({
     required: [true, 'Cooking time is required'],
     min: [1, 'Cooking time must be at least 1 minute'],
   },
+  imageUrl: {
+    type: String,
+    trim: true,
+    default: '',
+  },
   createdAt: {
     type: Date,
     default: Date.now,

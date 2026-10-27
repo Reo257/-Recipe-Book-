@@ -50,7 +50,7 @@ router.get('/:id', async (req, res, next) => {
  */
 router.post('/', async (req, res, next) => {
   try {
-    const { name, category, ingredients, preparationSteps, cookingTime } = req.body;
+    const { name, category, ingredients, preparationSteps, cookingTime, imageUrl } = req.body;
 
     const recipe = new Recipe({
       name,
@@ -58,6 +58,7 @@ router.post('/', async (req, res, next) => {
       ingredients,
       preparationSteps,
       cookingTime,
+      imageUrl,
     });
 
     const savedRecipe = await recipe.save();
@@ -82,11 +83,11 @@ router.put('/:id', async (req, res, next) => {
       return res.status(400).json({ message: 'Invalid recipe ID format' });
     }
 
-    const { name, category, ingredients, preparationSteps, cookingTime } = req.body;
+    const { name, category, ingredients, preparationSteps, cookingTime, imageUrl } = req.body;
 
     const updatedRecipe = await Recipe.findByIdAndUpdate(
       req.params.id,
-      { name, category, ingredients, preparationSteps, cookingTime },
+      { name, category, ingredients, preparationSteps, cookingTime, imageUrl },
       { new: true, runValidators: true } // Return updated doc & run schema validators
     );
 

@@ -11,6 +11,7 @@ const RecipeForm = ({ recipe, onSubmit, onClose }) => {
     ingredients: '',
     preparationSteps: '',
     cookingTime: '',
+    imageUrl: '',
   });
 
   const [errors, setErrors] = useState({});
@@ -23,6 +24,7 @@ const RecipeForm = ({ recipe, onSubmit, onClose }) => {
         ingredients: recipe.ingredients || '',
         preparationSteps: recipe.preparationSteps || '',
         cookingTime: recipe.cookingTime || '',
+        imageUrl: recipe.imageUrl || '',
       });
     }
   }, [recipe]);
@@ -53,6 +55,7 @@ const RecipeForm = ({ recipe, onSubmit, onClose }) => {
     const payload = {
       ...formData,
       cookingTime: Number(formData.cookingTime),
+      imageUrl: formData.imageUrl.trim(),
     };
     onSubmit(payload, isEditing ? recipe._id || recipe.id : null);
   };
@@ -98,6 +101,18 @@ const RecipeForm = ({ recipe, onSubmit, onClose }) => {
               ))}
             </select>
             {errors.category && <span className="error-message">{errors.category}</span>}
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="imageUrl">Dish Image URL (Optional)</label>
+            <input
+              type="url"
+              id="imageUrl"
+              name="imageUrl"
+              value={formData.imageUrl}
+              onChange={handleChange}
+              placeholder="e.g. https://images.unsplash.com/... (Optional)"
+            />
           </div>
 
           <div className="form-group">
