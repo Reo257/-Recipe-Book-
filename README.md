@@ -2,6 +2,12 @@
 
 A full-stack Recipe Book web application built with the **MERN Stack** (MongoDB, Express.js, React.js, Node.js). Users can store, view, edit, and delete their favourite recipes with a clean, responsive UI.
 
+## 🔗 Links & Submissions
+
+- **GitHub Repository**: [https://github.com/Reo257/-Recipe-Book-](https://github.com/Reo257/-Recipe-Book-)
+- **Live Frontend**: [Deployed Vercel URL]
+- **Live Backend API**: [Deployed Render URL]
+
 ## 📁 Project Structure
 
 ```
