@@ -43,6 +43,7 @@ project-root/
 - **View Recipe Details** — Modal showing full ingredients (as bullet list) and preparation steps
 - **Edit Recipe** — Pre-filled form, updates database and UI
 - **Delete Recipe** — Confirmation dialog before removal
+- **Dish Imagery & Dynamic Previews** — Custom image URL support with automatic category-based fallback photos, card banners with hover zoom, and hero images in details view
 - **Toast Notifications** — Success/error feedback messages
 - **Auto-refresh** — List updates automatically after every CRUD operation
 - **Responsive Design** — 1 column (mobile), 2 columns (tablet), 3 columns (desktop)
